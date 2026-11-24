@@ -126,7 +126,8 @@ async function generateLive(conceptId) {
     btn.disabled = true;
 
     try {
-        const response = await fetch('https://science-diagram-maker.onvoroa.com/api/results', {
+        // CHANGED THIS LINE: Now pointing to /api/generate instead of /api/results
+        const response = await fetch('https://science-diagram-maker.onvoroa.com/api/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ concept_id: conceptId })
