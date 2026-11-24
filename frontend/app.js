@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchResults() {
     try {
-        // Fetch the saved JSON data from the backend
-        const response = await fetch('https://science-diagram-maker.onvoroa.com/api/results');
+        // Fetch the saved JSON data from the backend (Updated to Render URL)
+        const response = await fetch('https://assignment-59r8.onrender.com/api/results');
         allResults = await response.json();
         renderTable();
     } catch (error) {
@@ -126,8 +126,8 @@ async function generateLive(conceptId) {
     btn.disabled = true;
 
     try {
-        // CHANGED THIS LINE: Now pointing to /api/generate instead of /api/results
-        const response = await fetch('https://science-diagram-maker.onvoroa.com/api/generate', {
+        // Updated to Render URL
+        const response = await fetch('https://assignment-59r8.onrender.com/api/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ concept_id: conceptId })
