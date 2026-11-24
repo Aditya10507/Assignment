@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function fetchResults() {
     try {
         // Fetch the saved JSON data from the backend
-        const response = await fetch('/api/results');
+        const response = await fetch('https://science-diagram-maker.onvoroa.com/api/results');
         allResults = await response.json();
         renderTable();
     } catch (error) {
@@ -126,7 +126,7 @@ async function generateLive(conceptId) {
     btn.disabled = true;
 
     try {
-        const response = await fetch('/api/generate', {
+        const response = await fetch('https://science-diagram-maker.onvoroa.com/api/results', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ concept_id: conceptId })
