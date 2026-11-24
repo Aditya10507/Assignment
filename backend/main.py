@@ -14,7 +14,7 @@ app = FastAPI(title="Udhi Science Diagram Maker")
 # Allow the frontend to talk to the backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://assignment-frontend-nine-neon.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
