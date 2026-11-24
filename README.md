@@ -3,6 +3,10 @@
 
 A small web application that asks an AI model to generate 5 animated science diagrams, validates each diagram using code, and allows a reviewer to approve or reject them.
 
+## 🌐 Live Demo
+
+🚀 **Try the application:** [Udhi Science Diagram Maker](https://assignment-frontend-nine-neon.vercel.app/)
+
 ## 🚀 How to Run It on Your Computer
 
 ### 1. Clone the Repository
